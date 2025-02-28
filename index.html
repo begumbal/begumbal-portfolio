@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begüm Bal - Portfolio</title>
+
+    <!-- Google Fonts - Modern & Minimalist -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Manrope', sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #000;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Left Side */
+        .left-side {
+            width: 50vw;
+            background: url('profile.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Right Side */
+        .right-side {
+            width: 50vw;
+            padding: 8vh 6vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: white;
+            text-align: center;
+            height: 100vh;
+            overflow-y: auto;
+            scroll-behavior: smooth; 
+        }
+
+        /* Name Header */
+        h1 {
+            font-size: 64px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: #333; 
+            margin-bottom: 40px; 
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 40px 0 20px 0;
+            color: #444;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        /* Project Cards */
+        .project-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            background: #000;
+            color: #fff;
+        }
+
+        /* Project Titles with Proper Spacing */
+        .project-title {
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+        }
+
+        /* Minimal Icons for Projects */
+        .project-icon {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        /* Work in Progress Badge */
+        .in-progress {
+            font-size: 14px;
+            background: #ffcc00;
+            color: black;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background: #000;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Side -->
+    <div class="left-side"></div>
+
+    <!-- Right Side -->
+    <div class="right-side">
+        <h1>Begüm Bal</h1>
+
+        <p><em><strong>AI</strong> fascinates me — especially <strong>Generative AI</strong> and <strong>Machine Learning</strong>.  
+        I’m always exploring the latest innovations and constantly improving my skills in <strong>software development</strong>.</em></p>
+
+        <h2>About Me</h2>
+        <p>I am a <strong>Software Engineering</strong> student at <strong>Yaşar University</strong>  
+        with a deep passion for <strong>Artificial Intelligence</strong>, especially <strong>Generative AI</strong> and <strong>Machine Learning</strong>.  
+        I thrive on <strong>staying ahead of emerging technologies</strong> and constantly expanding my knowledge in the field.</p>
+
+        <h2>Projects</h2>
+        <p>I enjoy building and experimenting with <strong>AI-driven applications</strong> that push the boundaries of technology.  
+        Here are some of my works, from <strong>machine learning models</strong> to innovative AI-powered tools.</p>
+
+        <!-- Completed Projects -->
+        <a href="https://github.com/begumbal/mnist-image-classifier" target="_blank" class="project-card">
+            <span class="project-title">
+                <span class="project-icon">📊</span> 
+                <span>MNIST Image Classifier</span>
+            </span> 
+            <span>→</span>
+        </a>
+
+        <a href="https://github.com/begumbal/web-portfolio" target="_blank" class="project-card">
+            <span class="project-title">
+                <span class="project-icon">💻</span> 
+                <span>Web Portfolio</span>
+            </span> 
+            <span>→</span>
+        </a>
+
+        <!-- Work in Progress Projects -->
+        <a href="https://github.com/begumbal/ai-language-voice-chatbot" target="_blank" class="project-card">
+            <span class="project-title">
+                <span class="project-icon">🗣️</span> 
+                <span>AI Language Learning Chatbot</span>
+            </span> 
+            <span class="in-progress">🚧 Work in Progress</span>
+        </a>
+
+        <a href="https://github.com/begumbal/plant-identification-ai" target="_blank" class="project-card">
+            <span class="project-title">
+                <span class="project-icon">🌱</span> 
+                <span>Plant & Herb Identification AI</span>
+            </span> 
+            <span class="in-progress">🚧 Work in Progress</span>
+        </a>
+
+        <a href="https://github.com/begumbal/foreign-language-saver" target="_blank" class="project-card">
+            <span class="project-title">
+                <span class="project-icon">📖</span> 
+                <span>Foreign Language Word Saver</span>
+            </span> 
+            <span class="in-progress">🚧 Work in Progress</span>
+        </a>
+
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:begumbbal@gmail.com" style="text-decoration: none; color: black;">begumbbal@gmail.com</a> |
+            <a href="https://github.com/begumbal" target="_blank" style="text-decoration: none; color: black;">GitHub: begumbal</a> |
+            <a href="https://www.linkedin.com/in/begumbal/" target="_blank" style="text-decoration: none; color: black;">LinkedIn: begumbal</a>
+        </p>
+    </div>
+
+    <footer>
+        © 2024 Begüm Bal | All Rights Reserved
+    </footer>
+
+</body>
+</html>
